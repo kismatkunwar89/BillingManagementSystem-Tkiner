@@ -616,7 +616,7 @@ class billing_system:
 
 
             if self.c_name.get()=="" or self.c_phoneno.get()=="":
-                messagebox.showerror("Error","Costumer Details are necessary\n\nSo,Here is empty bill with no Costumer Details")
+                messagebox.showerror("Error","Costumer Details are necessary\n\n So, Here is an empty bill . Please fill the details . ")
             elif self.t_personalcare.get()=="NRs.  0.0"and self.t_vgroceries.get()=="NRs.  0.0" and self.t_snacks.get()=="NRs.  0.0" and self.t_fvegetables.get()=="NRs.  0.0" and self.t_beverages.get()=="NRs.  0.0":
                 messagebox.showerror("Error","No items purchased \n \n Bill shall be empty")
 
@@ -991,7 +991,7 @@ class billing_system:
                 f1.close()
                 present="yes"
         if  present=="no":
-            messagebox.showerror("Error","Invalid bill no \n \n So, Bill might appear empty")
+            messagebox.showerror("Error","Invalid bill no \n \n So, Here you have an empty bill")
     
     def clear_data(self):
         msg=messagebox.askyesno("Clear Data","Do you really want to clear  your data ?")
