@@ -2,8 +2,6 @@ from tkinter import*
 from PIL import  ImageTk, Image
 from subprocess import call
 
-
-
 window=Tk()
 window.geometry("704x650")
 
@@ -11,41 +9,18 @@ window.title("THe Ultimate Walkers Mart")
 window.maxsize(704, 650)
 window.minsize(704, 650)
 
-
 def myfunc():
     window.destroy()
     path="/Users/kismat/Desktop/PROJECT/1.py"
     Call1= call(["Python3","{}".format(path)])
     print(Call1)
-   
-     
     
-
-
-
-
-
-
-
-    
-    
-    
-    
-
-
-    
-
-   
-    
-
-
 def create_image(filename): 
     img=Image.open(filename)
     img = img.resize((650, 600), Image.ANTIALIAS)
     photo=ImageTk.PhotoImage(img)
     return photo
     
-
 image1=create_image("1.png")
 lbl1=Label(window,image=image1)
 lbl1.place(x=30,y=0)
@@ -56,8 +31,6 @@ def cimage(filename):
     photo=ImageTk.PhotoImage(img)
     return photo
     
-
-
 image2=cimage("2.png")
 btn1=Button(window,image=image2,command=myfunc)
 btn1.place(x=520,y=420)
@@ -70,23 +43,6 @@ lb2.pack()
 
 lb3=Label(window,text="Location;\n Kapan,Budhanilkantha-11\nKathmandu,Nepal",width=100, font=("Times",24),anchor=SW,background="#414345",foreground="#cac531")
 lb3.pack(side=BOTTOM)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 window.mainloop()
 

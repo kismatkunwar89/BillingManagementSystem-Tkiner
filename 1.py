@@ -3,7 +3,6 @@ import math,random,os
 from tkinter import messagebox
 from PIL import ImageTk, Image
 
-
 class billing_system:
     def __init__(self, root):
         global photo
@@ -996,7 +995,7 @@ class billing_system:
     
     def clear_data(self):
         msg=messagebox.askyesno("Clear Data","Do you really want to clear  your data ?")
-        if op>0:
+        if msg>0:
             self.toothpaste.set(0)
             self.shampoo.set(0) 
             self.handsoap.set(0)
@@ -1074,52 +1073,7 @@ class billing_system:
         msg=messagebox.askyesno("Exit","Do you really want to exit?")
         if msg>0:
             self.root.destroy() 
-              
-
-
-
-
-
-
-               
-                  
-             
-              
-
-
-         
-
-
-
-      
-
-    
-
-
-
-    
-          
-
-
-
-    
-       
-
-        
-        
-
-                                   
-
-        
                                                 
-
-    
-
-
-        
-
-
-
 root=Tk()
 
 
