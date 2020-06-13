@@ -1,9 +1,9 @@
 from tkinter import*
 from PIL import  ImageTk, Image
-from subprocess import call
+import os
 
 window=Tk()
-window.geometry("704x650")
+window.geometry("604x550")
 
 window.title("THe Ultimate Walkers Mart")
 window.maxsize(704, 650)
@@ -11,8 +11,7 @@ window.minsize(704, 650)
 
 def myfunc():
     window.destroy()
-    path="/Users/kismat/Desktop/PROJECT/1.py"
-    Call1= call(["Python3","{}".format(path)])
+    Call1= os.system("python3 /Users/kismat/Desktop/PROJECT/1.py")
     print(Call1)
     
 def create_image(filename): 

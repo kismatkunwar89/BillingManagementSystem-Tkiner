@@ -616,7 +616,7 @@ class billing_system:
 
 
             if self.c_name.get()=="" or self.c_phoneno.get()=="":
-                messagebox.showerror("Error","Costumer Details are necessary\n\nSo,Bill may appear empty with no Costumer Details")
+                messagebox.showerror("Error","Costumer Details are necessary\n\nSo,Here is empty bill with no Costumer Details")
             elif self.t_personalcare.get()=="NRs.  0.0"and self.t_vgroceries.get()=="NRs.  0.0" and self.t_snacks.get()=="NRs.  0.0" and self.t_fvegetables.get()=="NRs.  0.0" and self.t_beverages.get()=="NRs.  0.0":
                 messagebox.showerror("Error","No items purchased \n \n Bill shall be empty")
 
